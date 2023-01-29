@@ -19,6 +19,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
+        // Replace line 24 with line 23 to be able to use localhost
         // const response = await fetch("http://localhost:8080/api/v1/post", {
         const response = await fetch(
           "https://dalle-clone-serve.onrender.com/api/v1/post",
@@ -62,6 +63,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
+        // Replace line 67 with line 66 to be able to use localhost
         // const response = await fetch("http://localhost:8080/api/v1/dalle", {
         const response = await fetch(
           "https://dalle-clone-serve.onrender.com/api/v1/dalle",
